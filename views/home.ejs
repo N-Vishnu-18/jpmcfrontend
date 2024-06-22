@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .search-bar form {
+            display: inline-block;
+        }
+
+        .search-bar input {
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        .search-bar button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+            margin: 2em 0;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 1em;
+            width: 30%;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .box button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .box button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Home Page</h1>
+    </header>
+    
+    <main>
+        <section class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Search..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="boxes">
+            <div class="box">
+                <h2>Box 1</h2>
+                <p>This is the content of box 1.</p>
+                <button onclick="window.location.href='mailto:example@example.com'">Email Us</button>
+            </div>
+            <div class="box">
+                <h2>Box 2</h2>
+                <p>This is the content of box 2.</p>
+            </div>
+            <div class="box">
+                <h2>Box 3</h2>
+                <p>This is the content of box 3.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</body>
+</html>
